@@ -6,7 +6,7 @@ It listens to requests on your local machine, and returns pre-defined responses 
 You can set this up in such as way that it mocks out third party services (i.e. your code won't know the difference).
 
 ### When do I use this?
-Your writing a service that integrates with another service that isn't built yet.
+You're writing a service that integrates with another service that isn't built yet.
 One option is to stub it out in your code, or you can enter in the expected responses as rules in this application, and have it running just like the real environment.
 It's also useful for running your service in sandbox mode, you don't necessarily want to call third party services while running a sandbox request, this can take over.
 Also while in development, the service your integrating with might not have a sandbox, or might be expensive to run requests through, you can use this instead.
@@ -15,7 +15,7 @@ Also while in development, the service your integrating with might not have a sa
 The ready-to-run program is in the deliverables folder, and is named WebServiceMock.exe.
 There are two configurable settings found in the file WebServiceMock.exe.config in the same folder as the exe.
 Environment:BaseUrl is the url the server will listen on, the default value is http://localhost:8080.
-Defaults:StatusCode is thes tatus code the server will respond with when a path from ~/api/mock/* is requested, the default value is 404.
+Defaults:StatusCode is the status code the server will respond with when a path from ~/api/mock/* is requested, the default value is 404.
 If you want all requests to be valid, you might change this value to 200.
 
 All custom rules are saved as JSON in a file called rules.txt in the same folder as the console application.
@@ -23,7 +23,7 @@ It starts off with some example rules so you can see how it works.
 Once you run the exe, you can browse to http://localhost:8080/api/mock/users, and see an example JSON response you might use with your service.
 
 ### Examples
-Since this is meant to run on a local box I don't have meant it running online anywhere.
+Since this is meant to run on a local box, I don't have meant it running online anywhere.
 But please check out the screens folder for some screenhots I took.
 
 ### I still don't get it!
