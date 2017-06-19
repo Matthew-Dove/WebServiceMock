@@ -3,6 +3,7 @@ using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Tests.Integration.WebServiceMock
@@ -28,5 +29,18 @@ namespace Tests.Integration.WebServiceMock
                 return JsonConvert.DeserializeObject<TResponse>(json);
             }
         }
+
+        public static async Task<HttpStatusCode> PostAsync<TRequest>(string path, TRequest request)
+        {
+            var json = JsonConvert.SerializeObject(request);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            using (var httpRequest = new HttpRequestMessage(HttpMethod.Post, string.Concat(Config.BaseUrl, path)) { Content = content })
+            using (var httpResponse = await _client.SendAsync(httpRequest))
+            {
+                return httpResponse.StatusCode;
+            }
+        }
+
+        public static void Release() => _client.Dispose();
     }
 }

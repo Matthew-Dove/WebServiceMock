@@ -25,7 +25,15 @@ namespace WebServiceMock.Core.Services
 
         public RepositoryService()
         {
-            _path = string.Concat(AppDomain.CurrentDomain.BaseDirectory, "rules.txt");
+            var baseDirectory = AppDomain.CurrentDomain.BaseDirectory; // Alternative project types will have slightly different base directories.
+            if (baseDirectory[baseDirectory.Length - 1] == '\\')
+            {
+                _path = string.Concat(baseDirectory, "rules.txt");
+            }
+            else
+            {
+                _path = string.Concat(baseDirectory, "\\", "rules.txt");
+            }
         }
 
         public IEnumerable<RuleModel> GetRules()
