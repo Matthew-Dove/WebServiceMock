@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="initial-scale=1,width=device-width" name="viewport">
+
+    <link rel="icon" href="favicon.ico" sizes="32x32" type="image/x-icon" />
+    <link href="/Content/Css/Site.css" rel="stylesheet" />
+    <link href="/Content/Css/bijou.min.css" rel="stylesheet" />
+
+    <title>Web Service Mock</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="center span twelve">
+                <h4>Tracing</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span twelve">
+                <a class="button primary large" href="/">Home</a>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div id="traceDisplay"></div>
+    </div>
+
+    <script src="/Content/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="/Content/Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+
+    <script>
+        (function () {
+            var display = document.getElementById('traceDisplay');
+
+            function displayTrace(text, cssClass) {
+                var p = document.createElement('P');
+
+                // Different browsers have different properties for setting the text on elements.
+                if (p.innerText) {
+                    p.innerText = text;
+                }
+                else {
+                    p.textContent = text
+                }
+
+                var div = document.createElement('DIV');
+                div.className = cssClass;
+                div.appendChild(p);
+
+                display.insertBefore(div, display.firstChild);
+            }
+
+            $(function () {
+                // This function is called from TraceHub when there is a new log.
+                $.connection.traceHub.client.receiveLog = function (text) {
+                    displayTrace(text, 'alert primary');
+                };
+
+                // This function is called from TraceHub when there is a new error.
+                $.connection.traceHub.client.receiveError = function (text) {
+                    displayTrace(text, 'alert danger');
+                };
+
+                // Connect to TraceHub.
+                $.connection.hub.start().done(function () {
+                    display.innerHTML = '<div class="alert success"><p>Connected to TraceHub.</p></div>';
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
