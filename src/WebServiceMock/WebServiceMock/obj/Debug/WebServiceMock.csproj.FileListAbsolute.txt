@@ -111,6 +111,7 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\b
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe.config
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.pdb
+C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.Core.dll
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Owin.dll
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.StaticFiles.dll
@@ -130,6 +131,7 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\b
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Security.dll
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.Core.pdb
+C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.StaticFiles.xml
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Web.Http.xml
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Practices.Unity.xml
@@ -149,5 +151,3 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\b
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.csprojResolveAssemblyReference.cache
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.exe
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
-C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
-C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Host.HttpListener.xml
