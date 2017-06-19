@@ -156,6 +156,7 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\o
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Css\bijou.min.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Css\Site.css
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery-3.1.1.min.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery.signalR-2.2.2.min.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\json.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Rule.html
@@ -186,6 +187,8 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Web.Http.dll
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Web.Http.Owin.dll
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Unity.WebApi.dll
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.Core.dll
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.Core.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.AspNet.SignalR.Core.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.AspNet.SignalR.SystemWeb.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.xml
@@ -206,7 +209,6 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Web.Http.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\System.Web.Http.Owin.xml
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.csprojResolveAssemblyReference.cache
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.exe
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery-3.1.1.min.js
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.csprojResolveAssemblyReference.cache

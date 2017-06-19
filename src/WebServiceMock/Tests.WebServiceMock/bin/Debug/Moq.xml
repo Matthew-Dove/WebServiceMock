@@ -400,8 +400,8 @@
         </member>
         <member name="M:Moq.It.IsNotNull``1">
             <summary>
-         Matches any value of the given <typeparamref name="TValue" /> type, except null.
-      </summary><typeparam name="TValue">Type of the value.</typeparam>
+			Matches any value of the given <typeparamref name="TValue" /> type, except null.
+		</summary><typeparam name="TValue">Type of the value.</typeparam>
         </member>
         <member name="M:Moq.It.Is``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
             <summary>
@@ -3089,16 +3089,16 @@
         </member>
         <member name="P:Moq.Mock.IsDelegateMock">
             <summary>
-            Allows to check whether expression conversion to the <see cref="P:Moq.Mock.DelegateInterfaceMethod"/> 
-            must be performed on the mock, without causing unnecessarily early initialization of 
+            Allows to check whether expression conversion to the <see cref="P:Moq.Mock.DelegateInterfaceMethod"/>
+            must be performed on the mock, without causing unnecessarily early initialization of
             the mock instance, which breaks As{T}.
             </summary>
         </member>
         <member name="P:Moq.Mock.DefaultValueProvider">
             <summary>
-            Specifies the class that will determine the default 
-            value to return when invocations are made that 
-            have no setups and need to return a default 
+            Specifies the class that will determine the default
+            value to return when invocations are made that
+            have no setups and need to return a default
             value (for loose mocks).
             </summary>
         </member>
@@ -3165,7 +3165,7 @@
         </member>
         <member name="M:Moq.Mock.DoRaise(System.Reflection.EventInfo,System.Object[])">
             <summary>
-            Raises the associated event with the given 
+            Raises the associated event with the given
             event argument data.
             </summary>
         </member>
@@ -4359,7 +4359,7 @@
             Provides additional methods on mocks.
             </summary>
             <remarks>
-            Those methods are useful for Testeroids support. 
+            Those methods are useful for Testeroids support.
             </remarks>
         </member>
         <member name="M:Moq.MockExtensions.ResetCalls(Moq.Mock)">
@@ -5467,6 +5467,14 @@
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
+        <member name="M:Moq.ReturnsExtensions.ThrowsAsync``1(Moq.Language.IReturns{``0,System.Threading.Tasks.Task},System.Exception)">
+            <summary>
+            Specifies the exception to throw when the asynchronous method is invoked.
+            </summary>
+            <typeparam name="TMock">Mocked type.</typeparam>
+            <param name="mock">Returns verb which represents the mocked type and the task return type</param>
+            <param name="exception">Exception instance to throw.</param>
+        </member>
         <member name="M:Moq.ReturnsExtensions.ThrowsAsync``2(Moq.Language.IReturns{``0,System.Threading.Tasks.Task{``1}},System.Exception)">
             <summary>
             Specifies the exception to throw when the asynchronous method is invoked.
@@ -5526,98 +5534,98 @@
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``4(Moq.Language.IReturns{``2,System.Threading.Tasks.Task{``3}},System.Func{``0,``1,``3})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``5(Moq.Language.IReturns{``3,System.Threading.Tasks.Task{``4}},System.Func{``0,``1,``2,``4})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``6(Moq.Language.IReturns{``4,System.Threading.Tasks.Task{``5}},System.Func{``0,``1,``2,``3,``5})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``7(Moq.Language.IReturns{``5,System.Threading.Tasks.Task{``6}},System.Func{``0,``1,``2,``3,``4,``6})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``8(Moq.Language.IReturns{``6,System.Threading.Tasks.Task{``7}},System.Func{``0,``1,``2,``3,``4,``5,``7})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``9(Moq.Language.IReturns{``7,System.Threading.Tasks.Task{``8}},System.Func{``0,``1,``2,``3,``4,``5,``6,``8})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``10(Moq.Language.IReturns{``8,System.Threading.Tasks.Task{``9}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``9})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``11(Moq.Language.IReturns{``9,System.Threading.Tasks.Task{``10}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``10})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``12(Moq.Language.IReturns{``10,System.Threading.Tasks.Task{``11}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``11})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``13(Moq.Language.IReturns{``11,System.Threading.Tasks.Task{``12}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``12})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``14(Moq.Language.IReturns{``12,System.Threading.Tasks.Task{``13}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``13})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``15(Moq.Language.IReturns{``13,System.Threading.Tasks.Task{``14}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``14})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``16(Moq.Language.IReturns{``14,System.Threading.Tasks.Task{``15}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``15})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
         <member name="M:Moq.GeneratedReturnsExtensions.ReturnsAsync``17(Moq.Language.IReturns{``15,System.Threading.Tasks.Task{``16}},System.Func{``0,``1,``2,``3,``4,``5,``6,``7,``8,``9,``10,``11,``12,``13,``14,``16})">
             <summary>
             Specifies a function that will calculate the value to return from the asynchronous method.
-            </summary>		
+            </summary>
             <param name="mock">Returns verb which represents the mocked type and the task of return type</param>
             <param name="valueFunction">The function that will calculate the return value.</param>
         </member>
@@ -5639,13 +5647,6 @@
         <member name="M:Moq.SequenceExtensions.ThrowsAsync``1(Moq.Language.ISetupSequentialResult{System.Threading.Tasks.Task{``0}},System.Exception)">
             <summary>
             Throws a sequence of exceptions, once per call.
-            </summary>
-        </member>
-        <member name="T:Moq.SerializableTypesValueProvider">
-            <summary>
-            A <see cref="T:Moq.IDefaultValueProvider"/> that returns an empty default value 
-            for serializable types that do not implement ISerializable properly, 
-            and returns the value provided by the decorated provider otherwise.
             </summary>
         </member>
         <member name="T:Moq.Times">
@@ -5785,13 +5786,13 @@
             <summary>Branch: master</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 2bf7e81</summary>
+            <summary>Commit: bfb61fe</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 2bf7e81862f549b12f89ef80cced48652d60c8ae</summary>
+            <summary>Sha: bfb61fe3afcbd969efe6531bcc21a8f0094dd353</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 25</summary>
+            <summary>Commits on top of base version: 49</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -5821,7 +5822,7 @@
             <summary>Minor: 7</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 25</summary>
+            <summary>Patch: 49</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>
