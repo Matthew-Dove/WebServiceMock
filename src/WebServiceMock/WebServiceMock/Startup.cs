@@ -19,17 +19,24 @@ namespace WebServiceMock
             app.UseNancy();             // Nancy for serving webpages to humans, goes last as it will catch all unhandled requests (returning a 404 page).
         }
 
-        private void FileConfiguration(IAppBuilder app)
+        private static void FileConfiguration(IAppBuilder app)
         {
             // So we can serve JavaScript, and CSS files.
-            app.UseFileServer(new FileServerOptions
+            app.UseStaticFiles(new StaticFileOptions
             {
                 FileSystem = new PhysicalFileSystem("Content"),
-                RequestPath = new PathString("/Content")
+                RequestPath = new PathString("/Content"),
+                OnPrepareResponse = StaticFileResponse
             });
         }
 
-        private void WebApiConfiguration(IAppBuilder app)
+        private static void StaticFileResponse(StaticFileResponseContext fileResponse)
+        {
+            var cacheSeconds = 60 * 60 * 10;
+            fileResponse.OwinContext.Response.Headers["Cache-Control"] = "public,max-age=" + cacheSeconds;
+        }
+
+        private static void WebApiConfiguration(IAppBuilder app)
         {
             var configuration = new HttpConfiguration();
             var dependencyService = new DependencyService();
