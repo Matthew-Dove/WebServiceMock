@@ -150,70 +150,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\MockController.cs" />
-    <Compile Include="Api\PingController.cs" />
-    <Compile Include="Api\RulesController.cs" />
-    <Compile Include="Hubs\TraceHub.cs" />
-    <Compile Include="Models\HttpVerb.cs" />
-    <Compile Include="Models\RuleModel.cs" />
-    <Compile Include="Models\RuleViewModel.cs" />
-    <Compile Include="Models\UpsertRuleViewModel.cs" />
-    <Compile Include="Modules\HomeModule.cs" />
-    <Compile Include="Modules\AddRuleModule.cs" />
-    <Compile Include="Modules\RuleModule.cs" />
-    <Compile Include="Modules\TracingModule.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\ConfigService.cs" />
-    <Compile Include="Services\DependencyService.cs" />
-    <Compile Include="Services\HtmlService.cs" />
-    <Compile Include="Services\RepositoryService.cs" />
-    <Compile Include="Services\RuleService.cs" />
-    <Compile Include="Services\TraceService.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-3.1.1.min.map" />
-    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Css\bijou.min.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Css\Site.css">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Scripts\jquery-3.1.1.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Scripts\jquery.signalR-2.2.2.min.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Content\Scripts\json.js">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="favicon.ico" />
-    <Content Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.1.1.js" />
-    <Content Include="Scripts\jquery-3.1.1.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
-    <Content Include="Scripts\jquery.signalR-2.2.2.js" />
-    <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
-    <Content Include="views\Rule.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="views\Tracing.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="views\favicon.ico">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="views\Home.html">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -227,9 +173,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Start\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\WebServiceMock.Core\WebServiceMock.Core.csproj">
       <Project>{b7a5e52c-a0f6-486a-be79-350314d64d14}</Project>

@@ -1,7 +1,6 @@
-﻿using Microsoft.Owin.Hosting;
-using System;
+﻿using System;
 using System.Diagnostics;
-using WebServiceMock.Services;
+using WebServiceMock.Core;
 
 namespace WebServiceMock
 {
@@ -11,16 +10,12 @@ namespace WebServiceMock
         {
             try
             {
-                using (var dependencyService = new DependencyService()) // Initialize the DI container.
+                using (WebServer.GetHandle(Config.BaseUrl)) // Start the web server.
                 {
-                    var configService = dependencyService.Resolve<IConfigService>();
-                    using (WebApp.Start<Startup>(configService.BaseUrl)) // Start the web server.
-                    {
-                        Process.Start(configService.BaseUrl);
-                        Console.WriteLine(string.Concat("Listening on ", configService.BaseUrl));
-                        Console.Write("Press any key to kill the server");
-                        Console.ReadKey(true); // Wait for user input to kill the server.
-                    }
+                    Process.Start(Config.BaseUrl);
+                    Console.WriteLine(string.Concat("Listening on ", Config.BaseUrl));
+                    Console.Write("Press any key to kill the server");
+                    Console.ReadKey(true); // Wait for user input to kill the server.
                 }
             }
             catch (Exception ex)

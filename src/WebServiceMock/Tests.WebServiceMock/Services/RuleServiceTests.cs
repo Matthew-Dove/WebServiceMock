@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebServiceMock.Services;
+using WebServiceMock.Core.Services;
 using Moq;
-using WebServiceMock.Models;
+using WebServiceMock.Core.Models;
 using System.Collections.Generic;
 using System.Linq;
 

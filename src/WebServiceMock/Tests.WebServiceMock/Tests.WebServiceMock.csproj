@@ -68,14 +68,14 @@
     <Compile Include="Services\RuleServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebServiceMock\WebServiceMock.csproj">
-      <Project>{5d720b69-2b9a-449d-8f48-d69c1cfaa31c}</Project>
-      <Name>WebServiceMock</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebServiceMock.Core\WebServiceMock.Core.csproj">
+      <Project>{b7a5e52c-a0f6-486a-be79-350314d64d14}</Project>
+      <Name>WebServiceMock.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

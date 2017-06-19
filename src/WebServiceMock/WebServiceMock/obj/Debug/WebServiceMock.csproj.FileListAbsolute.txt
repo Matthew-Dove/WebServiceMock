@@ -159,10 +159,10 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery-3.1.1.min.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery.signalR-2.2.2.min.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\json.js
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Rule.html
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Tracing.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\favicon.ico
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Home.html
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Rule.html
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Tracing.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe.config
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.pdb
