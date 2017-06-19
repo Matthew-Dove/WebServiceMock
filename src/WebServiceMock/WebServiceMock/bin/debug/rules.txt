@@ -52,5 +52,14 @@
     "ContentType": "",
     "Body": "",
     "HasResponseBody": false
+  },
+  {
+    "Id": "f3fda3d9-91cb-4456-ae9b-8d06af038d14",
+    "Url": "/test",
+    "Method": 2,
+    "StatusCode": 200,
+    "ContentType": "text/plain",
+    "Body": "f",
+    "HasResponseBody": true
   }
 ]

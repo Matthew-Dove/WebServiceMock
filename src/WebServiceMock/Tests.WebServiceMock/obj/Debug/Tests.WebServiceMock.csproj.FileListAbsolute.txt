@@ -47,8 +47,7 @@ C:\Projects\Default\WebServiceMock\Tests.WebServiceMock\obj\Debug\Tests.WebServi
 C:\Projects\Default\WebServiceMock\Tests.WebServiceMock\obj\Debug\Tests.WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Css\bijou.min.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Css\Site.css
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Scripts\jquery-2.1.4.min.js
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Scripts\jquery.signalR-2.2.0.min.js
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Scripts\jquery.signalR-2.2.2.min.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Scripts\json.js
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\views\Rule.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\views\Tracing.html
@@ -97,3 +96,4 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebSe
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\obj\Debug\Tests.WebServiceMock.csprojResolveAssemblyReference.cache
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\obj\Debug\Tests.WebServiceMock.dll
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\obj\Debug\Tests.WebServiceMock.pdb
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\Tests.WebServiceMock\bin\Debug\Content\Scripts\jquery-3.1.1.min.js
