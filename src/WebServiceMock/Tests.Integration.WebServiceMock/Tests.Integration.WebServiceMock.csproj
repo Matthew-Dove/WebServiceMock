@@ -81,6 +81,7 @@
     <Compile Include="ApiService.cs" />
     <Compile Include="Api\PingControllerTests.cs" />
     <Compile Include="Api\RuleControllerTests.cs" />
+    <Compile Include="Api\MockControllerTests.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Models\GetModel.cs" />
     <Compile Include="Models\PostModel.cs" />
