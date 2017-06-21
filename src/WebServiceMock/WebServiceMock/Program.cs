@@ -12,7 +12,10 @@ namespace WebServiceMock
             {
                 using (WebServer.GetHandle(Config.BaseUrl)) // Start the web server.
                 {
-                    Process.Start(Config.BaseUrl);
+                    if (Environment.UserInteractive)
+                    {
+                        Process.Start(Config.BaseUrl);
+                    }
                     Console.WriteLine(string.Concat("Listening on ", Config.BaseUrl));
                     Console.Write("Press any key to kill the server");
                     Console.ReadKey(true); // Wait for user input to kill the server.

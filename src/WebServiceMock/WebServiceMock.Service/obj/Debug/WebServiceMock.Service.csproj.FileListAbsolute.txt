@@ -117,3 +117,4 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock.S
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock.Service\obj\Debug\WebServiceMock.Service.csproj.GenerateResource.Cache
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock.Service\obj\Debug\WebServiceMock.Service.exe
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock.Service\obj\Debug\WebServiceMock.Service.pdb
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock.Service\bin\Debug\Cmds\README.txt

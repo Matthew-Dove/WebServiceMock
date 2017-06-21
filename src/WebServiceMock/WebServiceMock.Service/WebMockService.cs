@@ -22,6 +22,10 @@ namespace WebServiceMock.Service
             try
             {
                 _handle = WebServer.GetHandle(Config.BaseUrl); // Start the web server.
+                if (Environment.UserInteractive)
+                {
+                    Process.Start(Config.BaseUrl);
+                }
             }
             catch (Exception ex)
             {
