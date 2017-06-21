@@ -96,9 +96,6 @@ C:\Projects\Default\WebServiceMock\WebServiceMock\bin\Release\System.Web.Http.xm
 C:\Projects\Default\WebServiceMock\WebServiceMock\bin\Release\System.Web.Http.Owin.xml
 C:\Projects\Default\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.exe
 C:\Projects\Default\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.pdb
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\WebServiceMock.exe.config
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.exe
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Content\Css\bijou.min.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Content\Css\Site.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Content\Scripts\jquery-3.1.1.min.js
@@ -108,6 +105,7 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\views\Home.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\views\Rule.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\views\Tracing.html
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\WebServiceMock.exe.config
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\WebServiceMock.exe
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Microsoft.Owin.Host.HttpListener.dll
@@ -148,3 +146,5 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Microsoft.Practices.ServiceLocation.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Release\Microsoft.Owin.Security.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.csprojResolveAssemblyReference.cache
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.exe
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Release\WebServiceMock.pdb

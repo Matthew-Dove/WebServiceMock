@@ -151,9 +151,6 @@ C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\b
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.csprojResolveAssemblyReference.cache
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.exe
 C:\Users\Matthew\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe.config
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.exe
-C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Css\bijou.min.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Css\Site.css
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Content\Scripts\jquery-3.1.1.min.js
@@ -163,6 +160,7 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Home.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Rule.html
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\views\Tracing.html
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe.config
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.exe
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\WebServiceMock.pdb
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Host.HttpListener.dll
@@ -203,3 +201,5 @@ C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceM
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.csprojResolveAssemblyReference.cache
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.exe
+C:\Users\matthew.dove\Source\Repos\WebServiceMock\src\WebServiceMock\WebServiceMock\obj\Debug\WebServiceMock.pdb
