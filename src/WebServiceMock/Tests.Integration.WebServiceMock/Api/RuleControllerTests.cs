@@ -100,13 +100,26 @@ namespace Tests.Integration.WebServiceMock.Api
         [TestMethod]
         public async Task DeleteExistingRule_Valid()
         {
+            var rule = GetNewRule();
+            rule.Url = "/orders/6";
 
+            var create = await ApiService.PostAsync<Rule, Rule>("api/rules", rule);
+            var path = create.Location.AbsolutePath;
+            var delete = await ApiService.DeleteAsync($"api/rules/{create.Response.Id}");
+            var get = await ApiService.GetAsync<RuleBody>(path.Substring(1, path.Length - 1)); // Ensure rule no longer exists.
+
+            Assert.AreEqual(HttpStatusCode.NoContent, delete);
+            Assert.AreEqual(HttpStatusCode.NotFound, get.StatusCode);
         }
 
         [TestMethod]
         public async Task DeleteRule_ThatDoesNotExist_NotValid()
         {
+            var id = Guid.NewGuid(); // New Id ensures this rule won't exist yet.
 
+            var delete = await ApiService.DeleteAsync($"api/rules/{id}");
+
+            Assert.AreEqual(HttpStatusCode.InternalServerError, delete);
         }
 
         #endregion

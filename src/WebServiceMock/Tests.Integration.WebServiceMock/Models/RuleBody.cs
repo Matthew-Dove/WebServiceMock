@@ -1,6 +1,6 @@
 ﻿namespace Tests.Integration.WebServiceMock.Models
 {
-    struct RuleBody
+    class RuleBody
     {
         public int ProductId { get; set; }
         public int Quantity { get; set; }

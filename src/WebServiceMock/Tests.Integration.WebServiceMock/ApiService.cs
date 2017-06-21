@@ -57,6 +57,15 @@ namespace Tests.Integration.WebServiceMock
             }
         }
 
+        public static async Task<HttpStatusCode> DeleteAsync(string path)
+        {
+            using (var httpRequest = new HttpRequestMessage(HttpMethod.Delete, path))
+            using (var httpResponse = await _client.SendAsync(httpRequest))
+            {
+                return httpResponse.StatusCode;
+            }
+        }
+
         public static void Release() => _client.Dispose();
     }
 }
