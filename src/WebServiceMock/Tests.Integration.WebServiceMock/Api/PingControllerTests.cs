@@ -9,8 +9,8 @@ namespace Tests.Integration.WebServiceMock.Api
         [TestMethod]
         public async Task PingReturnsPong()
         {
-            var result = await ApiService.GetAsync<string>("/Api/Ping");
-            Assert.AreEqual("Pong", result);
+            var get = await ApiService.GetAsync<string>("api/ping");
+            Assert.AreEqual("Pong", get.Response);
         }
     }
 }

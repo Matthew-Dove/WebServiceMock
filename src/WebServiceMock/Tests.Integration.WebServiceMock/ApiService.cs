@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Tests.Integration.WebServiceMock.Models;
 
 namespace Tests.Integration.WebServiceMock
 {
@@ -15,26 +16,41 @@ namespace Tests.Integration.WebServiceMock
         static ApiService()
         {
             _client = new HttpClient();
+            _client.BaseAddress = new Uri(Config.BaseUrl);
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             ServicePointManager.FindServicePoint(new Uri(Config.BaseUrl)).ConnectionLeaseTimeout = 30000;
             ServicePointManager.DefaultConnectionLimit = int.MaxValue;
         }
 
-        public static async Task<TResponse> GetAsync<TResponse>(string path)
+        public static async Task<GetModel<TResponse>> GetAsync<TResponse>(string path)
         {
-            using (var httpRequest = new HttpRequestMessage(HttpMethod.Get, string.Concat(Config.BaseUrl, path)))
+            using (var httpRequest = new HttpRequestMessage(HttpMethod.Get, path))
             using (var httpResponse = await _client.SendAsync(httpRequest))
             {
-                var json = await httpResponse.Content.ReadAsStringAsync();
-                return JsonConvert.DeserializeObject<TResponse>(json);
+                var body = await httpResponse.Content.ReadAsStringAsync();
+                var response = JsonConvert.DeserializeObject<TResponse>(body);
+                return new GetModel<TResponse>(response, httpResponse.StatusCode);
             }
         }
 
-        public static async Task<HttpStatusCode> PostAsync<TRequest>(string path, TRequest request)
+        public static async Task<PostModel<TResponse>> PostAsync<TRequest, TResponse>(string path, TRequest request)
         {
             var json = JsonConvert.SerializeObject(request);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
-            using (var httpRequest = new HttpRequestMessage(HttpMethod.Post, string.Concat(Config.BaseUrl, path)) { Content = content })
+            using (var httpRequest = new HttpRequestMessage(HttpMethod.Post, path) { Content = content })
+            using (var httpResponse = await _client.SendAsync(httpRequest))
+            {
+                var body = await httpResponse.Content.ReadAsStringAsync();
+                var response = JsonConvert.DeserializeObject<TResponse>(body);
+                return new PostModel<TResponse>(response, httpResponse.StatusCode, httpResponse.Headers.Location);
+            }
+        }
+
+        public static async Task<HttpStatusCode> PutAsync<TRequest>(string path, TRequest request)
+        {
+            var json = JsonConvert.SerializeObject(request);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            using (var httpRequest = new HttpRequestMessage(HttpMethod.Put, path) { Content = content })
             using (var httpResponse = await _client.SendAsync(httpRequest))
             {
                 return httpResponse.StatusCode;
