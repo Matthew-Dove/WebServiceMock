@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "49ed8124-b0a4-4d63-860c-66db63c699a6",
+    "Url": "/users",
+    "Method": 2,
+    "StatusCode": 200,
+    "ContentType": "text/plain",
+    "Body": "hello world",
+    "HasResponseBody": true
+  }
+]

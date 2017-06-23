@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Integration.WebServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceMock.Service", "WebServiceMock.Service\WebServiceMock.Service.csproj", "{15D34ED2-9D6A-477A-98D8-D70048DFE621}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceMock.Web", "WebServiceMock.Web\WebServiceMock.Web.csproj", "{822C30E8-DE5A-46C5-BF6E-BFCB58DEBBD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{15D34ED2-9D6A-477A-98D8-D70048DFE621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15D34ED2-9D6A-477A-98D8-D70048DFE621}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15D34ED2-9D6A-477A-98D8-D70048DFE621}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822C30E8-DE5A-46C5-BF6E-BFCB58DEBBD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822C30E8-DE5A-46C5-BF6E-BFCB58DEBBD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822C30E8-DE5A-46C5-BF6E-BFCB58DEBBD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822C30E8-DE5A-46C5-BF6E-BFCB58DEBBD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

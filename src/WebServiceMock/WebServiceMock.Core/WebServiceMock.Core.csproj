@@ -128,6 +128,7 @@
     <Compile Include="Api\PingController.cs" />
     <Compile Include="Api\RulesController.cs" />
     <Compile Include="Hubs\TraceHub.cs" />
+    <Compile Include="Models\HostMode.cs" />
     <Compile Include="Models\HttpVerb.cs" />
     <Compile Include="Models\RuleModel.cs" />
     <Compile Include="Models\RuleViewModel.cs" />

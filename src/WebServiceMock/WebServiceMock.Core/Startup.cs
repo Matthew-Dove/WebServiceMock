@@ -1,4 +1,5 @@
 ﻿using Microsoft.Owin;
+using Microsoft.Owin.Extensions;
 using Microsoft.Owin.FileSystems;
 using Microsoft.Owin.StaticFiles;
 using Owin;
@@ -6,17 +7,33 @@ using System.Web.Http;
 using WebServiceMock.Core.Models;
 using WebServiceMock.Core.Services;
 
+[assembly: OwinStartup(typeof(WebServiceMock.Core.Startup))]
 namespace WebServiceMock.Core
 {
     /// <summary>Initial configuration for self hosting.</summary>
     class Startup
     {
+        // By default assume the application is self-hosted.
+        private static HostMode _hostMode = HostMode.Self;
+        private static string _relativeRootPath = string.Empty; // The relative path to the Content folder.
+
+        public static void SetConfiguration(HostMode hostMode, string relativeRootPath)
+        {
+            _hostMode = hostMode;
+            _relativeRootPath = relativeRootPath;
+        }
+
         public void Configuration(IAppBuilder app)
         {
             FileConfiguration(app);     // Static file reads.
             app.MapSignalR();           // Real time client to server communication.
             WebApiConfiguration(app);   // WebApi to handle requests from other code (no mean't for human consumption).
             app.UseNancy();             // Nancy for serving webpages to humans, goes last as it will catch all unhandled requests (returning a 404 page).
+
+            if (_hostMode == HostMode.InternetInformationServices)
+            {
+                app.UseStageMarker(PipelineStage.MapHandler); // Plug into IIS so it can host the process.
+            }
         }
 
         private static void FileConfiguration(IAppBuilder app)
@@ -24,7 +41,7 @@ namespace WebServiceMock.Core
             // So we can serve JavaScript, and CSS files.
             app.UseStaticFiles(new StaticFileOptions
             {
-                FileSystem = new PhysicalFileSystem("Content"),
+                FileSystem = new PhysicalFileSystem(_relativeRootPath + "Content"),
                 RequestPath = new PathString("/Content"),
                 OnPrepareResponse = StaticFileResponse
             });
@@ -68,5 +85,13 @@ namespace WebServiceMock.Core
 
             app.UseWebApi(configuration);
         }
+    }
+
+    public static class RuntimeConfiguration
+    {
+        /// <summary>Set runtime environment values specific to how the solution is hosted.</summary>
+        /// <param name="hostMode">Whether the application is self-hosted or not.</param>
+        /// <param name="relativeRootPath">If the root path for the content folder, and it's files.</param>
+        public static void Set(HostMode hostMode, string relativeRootPath) => Startup.SetConfiguration(hostMode, relativeRootPath);
     }
 }
