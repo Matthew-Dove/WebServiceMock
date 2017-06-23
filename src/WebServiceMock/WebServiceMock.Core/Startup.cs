@@ -25,11 +25,10 @@ namespace WebServiceMock.Core
 
         public void Configuration(IAppBuilder app)
         {
-            FileConfiguration(app);     // Static file reads.
             app.MapSignalR();           // Real time client to server communication.
             WebApiConfiguration(app);   // WebApi to handle requests from other code (no mean't for human consumption).
-            app.UseNancy();             // Nancy for serving webpages to humans, goes last as it will catch all unhandled requests (returning a 404 page).
-
+            app.UseNancy();             // Nancy for serving webpages to humans, goes after WEB API config as it will catch all unhandled requests (returning a 404 page).
+            FileConfiguration(app);     // Static file reads, goes after Nancy so the root path is set first.
             if (_hostMode == HostMode.InternetInformationServices)
             {
                 app.UseStageMarker(PipelineStage.MapHandler); // Plug into IIS so it can host the process.
