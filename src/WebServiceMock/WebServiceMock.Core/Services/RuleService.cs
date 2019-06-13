@@ -177,7 +177,7 @@ namespace WebServiceMock.Core.Services
                     throw new ArgumentOutOfRangeException("rule", string.Format("Cannot insert the rule, as the url {0} is in use by another rule.", rule.Url));
                 }
 
-                Array.Resize<RuleModel>(ref rules, rules.Length + 1);
+                Array.Resize(ref rules, rules.Length + 1);
                 rules[rules.Length - 1] = newRule;
                 _repositoryService.SaveRules(rules);
                 ClearRules(); // Force the rules to read from the repository to ensure they're insync.

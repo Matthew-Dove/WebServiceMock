@@ -7131,9 +7131,10 @@
         <member name="M:Nancy.Security.Csrf.Enable(Nancy.Bootstrapper.IPipelines,Nancy.Cryptography.CryptographyConfiguration)">
             <summary>
             Enables Csrf token generation.
-            This is disabled by default.
             </summary>
-            <param name="pipelines">Application pipelines</param>
+            <remarks>This is disabled by default.</remarks>
+            <param name="pipelines">The application pipelines.</param>
+            <param name="cryptographyConfiguration">The cryptography configuration. This is <see langword="null" /> by default.</param>
         </member>
         <member name="M:Nancy.Security.Csrf.Disable(Nancy.Bootstrapper.IPipelines)">
             <summary>
@@ -7147,7 +7148,7 @@
             Only necessary if a particular route requires a new token for each request.
             </summary>
             <param name="module">Nancy module</param>
-            <returns></returns>
+            <param name="cryptographyConfiguration">The cryptography configuration. This is <c>null</c> by default.</param>
         </member>
         <member name="M:Nancy.Security.Csrf.GenerateTokenString(Nancy.Cryptography.CryptographyConfiguration)">
             <summary>
@@ -7170,13 +7171,12 @@
             Wires up the CSRF (anti-forgery token) support at application startup.
             </summary>
         </member>
-        <member name="M:Nancy.Security.CsrfApplicationStartup.#ctor(Nancy.Cryptography.CryptographyConfiguration,Nancy.IObjectSerializer,Nancy.Security.ICsrfTokenValidator)">
+        <member name="M:Nancy.Security.CsrfApplicationStartup.#ctor(Nancy.Cryptography.CryptographyConfiguration,Nancy.Security.ICsrfTokenValidator)">
             <summary>
             Initializes a new instance of the <see cref="T:Nancy.Security.CsrfApplicationStartup"/> class, using the
-            provided <paramref name="cryptographyConfiguration"/>, <paramref name="objectSerializer"/> and <paramref name="tokenValidator"/>.
+            provided <paramref name="cryptographyConfiguration"/> and <paramref name="tokenValidator"/>.
             </summary>
             <param name="cryptographyConfiguration">The cryptographic configuration to use.</param>
-            <param name="objectSerializer">The serializer that should be used.</param>
             <param name="tokenValidator">The token validator that should be used.</param>
         </member>
         <member name="M:Nancy.Security.CsrfApplicationStartup.Initialize(Nancy.Bootstrapper.IPipelines)">
@@ -7188,11 +7188,6 @@
         <member name="P:Nancy.Security.CsrfApplicationStartup.CryptographyConfiguration">
             <summary>
             Gets the configured crypto config
-            </summary>
-        </member>
-        <member name="P:Nancy.Security.CsrfApplicationStartup.ObjectSerializer">
-            <summary>
-            Gets the configured object serialiser
             </summary>
         </member>
         <member name="P:Nancy.Security.CsrfApplicationStartup.TokenValidator">
@@ -7209,6 +7204,15 @@
             <summary>
             The default key for the csrf cookie/form value/querystring value
             </summary>
+        </member>
+        <member name="M:Nancy.Security.CsrfToken.Equals(Nancy.Security.CsrfToken)">
+            <summary>
+            Compares two <see cref="T:Nancy.Security.CsrfToken"/> instances.
+            </summary>
+            <param name="other">The <see cref="T:Nancy.Security.CsrfToken"/> to compare.</param>
+            <returns>
+            <see langword="true"/> if two <see cref="T:Nancy.Security.CsrfToken"/> instances are equal, <see langword="false"/> otherwise.
+            </returns>
         </member>
         <member name="M:Nancy.Security.CsrfToken.Equals(System.Object)">
             <summary>
@@ -7227,6 +7231,26 @@
             A hash code for the current <see cref="T:System.Object"/>.
             </returns>
             <filterpriority>2</filterpriority>
+        </member>
+        <member name="M:Nancy.Security.CsrfToken.op_Equality(Nancy.Security.CsrfToken,Nancy.Security.CsrfToken)">
+            <summary>
+            Implements the operator == for <see cref="T:Nancy.Security.CsrfToken"/> instances.
+            </summary>
+            <param name="left">The left <see cref="T:Nancy.Security.CsrfToken"/>.</param>
+            <param name="right">The right <see cref="T:Nancy.Security.CsrfToken"/>.</param>
+            <returns>
+            <c>true</c> if left and right <see cref="T:Nancy.Security.CsrfToken"/> instances are equal.
+            </returns>
+        </member>
+        <member name="M:Nancy.Security.CsrfToken.op_Inequality(Nancy.Security.CsrfToken,Nancy.Security.CsrfToken)">
+            <summary>
+            Implements the operator != for <see cref="T:Nancy.Security.CsrfToken"/> instances.
+            </summary>
+            <param name="left">The left <see cref="T:Nancy.Security.CsrfToken"/>.</param>
+            <param name="right">The right <see cref="T:Nancy.Security.CsrfToken"/>.</param>
+            <returns>
+            <c>true</c> if left and right <see cref="T:Nancy.Security.CsrfToken"/> instances are not equal.
+            </returns>
         </member>
         <member name="P:Nancy.Security.CsrfToken.RandomBytes">
             <summary>

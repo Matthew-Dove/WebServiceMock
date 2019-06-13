@@ -1,9 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
-using WebServiceMock.Core;
+using WebServiceMock.Api.Services;
 
-namespace Tests.Integration.WebServiceMock
+namespace Tests.Integration.WebServiceMock.Api
 {
     [TestClass]
     public class TestStartup
@@ -18,7 +18,7 @@ namespace Tests.Integration.WebServiceMock
 
         #region Initialize
 
-        static void StartWebServer() => _handle = WebServer.GetHandle(Config.BaseUrl);
+        static void StartWebServer() => _handle = new WebService();
 
         #endregion
 

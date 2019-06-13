@@ -7,5 +7,14 @@
     "ContentType": "text/plain",
     "Body": "hello world",
     "HasResponseBody": true
+  },
+  {
+    "Id": "f033a504-dce4-4792-bb94-7e81ce35c396",
+    "Url": "/webhook/001",
+    "Method": 4,
+    "StatusCode": 200,
+    "ContentType": "",
+    "Body": "",
+    "HasResponseBody": false
   }
 ]
